@@ -24,7 +24,7 @@ def cir():
     return render_template('en.html')
 
 @app.route('/batu', methods=['POST'])
-    r=int(request.form.get['hankei'])
+    r=int(request.form.get('hankei'))
     p=3.14
 
     a = 2*r*p
