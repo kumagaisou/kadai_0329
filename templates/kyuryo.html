@@ -7,8 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>TOPページ</h1><br>
-    <a href="{{url_for('kyuryo')}}">給与計算アプリ</a> <br>
-    <a href="{{url_for('cir')}}">円の公式計算アプリ</a>
+    <h1>給与計算アプリ</h1><br>
+    <form action="{{url_for('salary')}}" method="post">
+        時給：<input type="int" name="sal"><br>
+        労働時間：<input type="int" name="time"><br>
+        <input type="submit" value="送信">
+    </form>
 </body>
 </html>
