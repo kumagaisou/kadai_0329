@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head> 
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+        <h1>求めたい円の半径を入力してください</h1>
+        <form action="{{url_for('maru')}}"method='POST'>
+            <input name='hankei' type='text'>
+            <input type='submit' value='計算'>
+        </form>
+</body>
+</html>
